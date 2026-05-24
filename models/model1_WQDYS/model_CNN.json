@@ -1,0 +1,29 @@
+{
+  "model": "CNN",
+  "CNN": {
+
+    "load_data": {
+      "test_size": 0.2,
+      "random_state": 42,
+      "load_path": "D:\\pycharm\\homework\\FacialEmotionRecognition\\Back_end\\data\\train\\fer2013.csv",
+      "stratify": true
+    },
+    "preprocessing": {
+      "batch_size": 64
+    },
+    "train": {
+      "model_type": "CNN",
+      "epochs": 20,
+      "lr": 0.001,
+      "weight_decay": 1e-4,
+      "load_model_path": "0",
+      "save_path": "Back_end/model_save/model_CNN.pth",
+      "verbose": true
+    },
+    "predict": {
+      "model_type": "CNN",
+      "load_model_path": "Back_end/model_save/model_CNN.pth",
+      "load_img_path": "Back_end/data/predict/num0.png"
+    }
+  }
+}
